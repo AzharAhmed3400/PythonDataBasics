@@ -35,6 +35,9 @@ print("Deleted successfully")
 L2 = L
 L2[2] = "hello good sir"
 print("L got changed" + str(L))
+    #New list
+L5 = [x**2 for x in range(10)]
+print("A new list pulled up " + str(L5))
 print()
 
 
@@ -60,3 +63,9 @@ D['checkers'] = 99999
 print('New look: ' + str(D))
 del D['C']
 print("Recently deleted: " + str(D))
+    #can place list, tuples, and other data structures in dictionary
+D2 = {'A': L, 'B': T, 'C':S, 'D': D}
+print(D2['B'])
+    #Can even change values in there
+D2['B'][3] = "I have been changed"
+print(D2['B'][3])
